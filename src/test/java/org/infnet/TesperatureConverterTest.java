@@ -3,6 +3,8 @@ package org.infnet;
 import org.infnet.converter.TemperatureConverter;
 import org.infnet.exception.TemperaturaInvalidaException;
 import org.junit.jupiter.api.*;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.ValueSource;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -50,6 +52,7 @@ public class TesperatureConverterTest {
         assertEquals("Temperature below absolute zero",
                 temperaturaInvalidaException.getMessage());
     }
+
 //    //Teardown
 //    @AfterEach
 //    void tearDown(){

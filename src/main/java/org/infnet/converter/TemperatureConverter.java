@@ -17,7 +17,6 @@ public class TemperatureConverter {
     }
 
     public double kelvinToCelsius(double kelvin) {
-        //if (kelvin < 0) throw new IllegalArgumentException("Temperature below absolute zero");
         if (kelvin < 0) throw new TemperaturaInvalidaException("Temperature below absolute zero");
         return kelvin - 273.15;
     }
